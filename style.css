@@ -1,0 +1,30 @@
+body{
+    background-image:linear-gradient(90deg,rgba(210, 50, 197, 0.5),rgba(50, 50, 250, 0.9));
+  }
+  .clock{
+    height:20rem;
+    width:20rem;
+    border:20px solid brown;
+    border-radius:50%;
+    position:relative;
+     margin:100px auto;
+    padding:2rem;
+    box-shadow: 0px 0px 7px 4px rgba(1,0,0,0.2);
+  }
+  .clock-face{
+    position:relative;
+    width: 100%;
+    height:100%;
+    transform: translateY(-3px);  
+  }
+  .hand{
+    width:50%;
+    height:5px;
+    background-color:black;
+    position:absolute;
+    top:50%;
+    transform-origin:100%;
+    transform:rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function:cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
